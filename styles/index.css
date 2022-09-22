@@ -50,3 +50,11 @@ ul {
 .last-update {
     color: gold;
 }
+
+h1 h2 h3 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+}
