@@ -4,16 +4,16 @@
 */
 @media (min-width: 768px) and (max-width: 1024px) {
   
-    nav ul {
+    .topnav ul {
         flex-direction: row;
         justify-content: center;
     }
     
-    nav li {
+    .topnav li {
         margin-right: 1rem;
     }
 
-    nav li:last-child {
+    .topnav li:last-child {
         margin-right: 0;
     }
 

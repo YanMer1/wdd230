@@ -13,17 +13,13 @@ body {
 main {
     background-color: #4C4AFF;
     color: white;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
 }
 
 header,
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: inherit;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -33,6 +29,12 @@ footer {
 
 footer {
     background: #167973;
+}
+
+.date {
+    display: block;
+    grid-column: 1/4;
+    text-align: center;
 }
 
 header h1 {
@@ -48,8 +50,6 @@ header h1 {
 
 .topnav ul {
     list-style: none;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 1rem 0;
     margin: 0;
@@ -170,6 +170,22 @@ a {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+    .img-logo {
+
+    }
+    
+    .topnav {
+        display: block;
+        grid-column: 3/4;
+        text-align: center;
+    }
+
+    .social {
+        display: block;
+        grid-column: 2/4;
+        text-align: center;
+    }
+
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;

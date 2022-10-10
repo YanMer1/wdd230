@@ -6,16 +6,25 @@
 
 @media (min-width: 1025px) {
 
-    nav ul {
-        flex-direction: row;
+    body {
+        display: grid;
+        grid-template-columns: 3;
+        grid-template-rows: 6;
+    }
+
+    header {
+        display: inline-block;
+    }
+   
+    .topnav ul {
         justify-content: center;
     }
     
-    nav li {
+    .topnav li {
         margin-right: 1rem;
     }
 
-    nav li:last-child {
+    .topnav li:last-child {
         margin-right: 0;
     }
 
@@ -27,5 +36,28 @@
 
     .cards .card {
         flex: 0 0 33.333333%;
+    }
+
+    .img-logo {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1/6;
+    }
+
+    .topnav {
+        width: 500px;
+        grid-column: 2/4;
+        grid-row: 1/6;
+    }
+
+    .social {
+        grid-column: 3/4;
+        grid-row: 1/6;
+    }
+
+    .date {
+        display: block;
+        grid-column: 2/4;
+        text-align: center;
     }
 }
