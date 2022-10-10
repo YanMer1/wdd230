@@ -21,8 +21,9 @@ main {
 
 header,
 footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: inherit;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -41,11 +42,11 @@ header h1 {
     margin: 0;
 }
 
-nav {
+.topnav {
     background-color: #2E6BDF;
 }
 
-nav ul {
+.topnav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -55,22 +56,22 @@ nav ul {
     line-height: 1.6;
 }
 
-nav li {
+.topnav li {
     display: none;
 }
 
-nav li:first-child {
+.topnav li:first-child {
     display: block;
 }
 
-nav a {
+.topnav a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
 }
 
-nav a:hover {
+.topnav a:hover {
     text-decoration: underline;
 }
 
@@ -136,7 +137,6 @@ a {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
     overflow: hidden;
   }
   
