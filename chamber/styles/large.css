@@ -8,8 +8,9 @@
 
     body {
         display: grid;
-        grid-template-columns: 3;
-        grid-template-rows: 6;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+       
+        
     }
 
     header {
@@ -39,25 +40,19 @@
     }
 
     .img-logo {
-        display: grid;
-        grid-column: 1/4;
-        grid-row: 1/6;
+        
     }
 
     .topnav {
-        width: 500px;
-        grid-column: 2/4;
-        grid-row: 1/6;
+       
     }
 
     .social {
-        grid-column: 3/4;
-        grid-row: 1/6;
+        
     }
 
     .date {
         display: block;
-        grid-column: 2/4;
         text-align: center;
     }
 }
