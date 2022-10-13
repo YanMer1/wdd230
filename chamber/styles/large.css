@@ -17,11 +17,8 @@
         display: inline-block;
     }
    
-    .topnav ul {
+    .topnav {
         justify-content: center;
-    }
-    
-    .topnav li {
         margin-right: 1rem;
     }
 
