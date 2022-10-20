@@ -1,55 +1,27 @@
 
 /* 
   ##Device = Laptops, Desktops
-  ##Screen = B/W 1025px
+  ##Screen = B/w 1025px
 */
 
 @media (min-width: 1025px) {
 
-    body {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-       
-        
-    }
-
-    header {
-        display: inline-block;
-    }
-   
-    .topnav {
+    nav ul {
+        flex-direction: row;
         justify-content: center;
+    }
+    
+    nav li {
         margin-right: 1rem;
+        display: flex;
+    }
+    
+    nav li:first-child {
+        display: none;
     }
 
-    .topnav li:last-child {
+    nav li:last-child {
         margin-right: 0;
     }
 
-    .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .cards .card {
-        flex: 0 0 33.333333%;
-    }
-
-    .img-logo {
-        
-    }
-
-    .topnav {
-       
-    }
-
-    .social {
-        
-    }
-
-    .date {
-        display: block;
-        text-align: center;
-    }
 }

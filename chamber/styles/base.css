@@ -1,245 +1,192 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
 }
 
 main {
-    background-color: #4C4AFF;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
+  background-color: #4C4AFF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 header,
 footer {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #FB5607;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #FB5607;
+  color: white;
 }
+
+
 
 footer {
-    background: #167973;
-}
-
-.date {
-    display: block;
-    grid-column: 1/4;
-    text-align: center;
+  background: #167973;
 }
 
 header h1 {
-    font-family: 'Kodchasan', sans-serif;
-    text-align: center;
-    color: white;
-    margin: 0;
+  font-family: 'Kodchasan', sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
 }
 
-.topnav {
-    background-color: #2E6BDF;
+nav {
+  background-color: #2E6BDF;
 }
 
-.topnav ul {
-    list-style: none;
-    align-items: center;
-    padding: 1rem 0;
-    margin: 0;
-    line-height: 1.6;
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0;
+  line-height: 1.6;
 }
 
-.topnav li {
-    display: none;
+nav li {
+  display: none;
 }
 
-.topnav li:first-child {
-    display: block;
+nav li:first-child {
+  display: block;
 }
 
-.topnav a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.topnav a:hover {
-    text-decoration: underline;
+nav a:hover {
+  text-decoration: underline;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
-.card {
-    text-align: left;
-    border: white dashed 2px;
-    margin: 4rem 0;
-    padding: 1rem;
-    max-width: 900px;
+.hero, .event, .weather, .news, .join, .spotlights {
+  text-align: center;
+  border: white dashed 2px;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  width: 100%;
 }
 
-.card-content {
-    display: flex;
-    flex-direction: column;
+.date {
+  border: white dashed 2px;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 95%;
+  background-color: #167973;
+}
+
+.navigation, .social {
+  float: right;
+}
+
+.col-1 img {
+  width: 50px;
+  height: 50px;
+}
+
+.spotlight1, .spotlight2 {
+  border: white dashed 2px;
+}
+
+.hero, .event, .weather, .news, .join, .spotlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.amadoracoc-logo {
+  float: left;
+}
+
+.social img {
+  width: 20px;
+  height: 20px;
+}
+
+.amadoracoc-logo img {
+  display: inline;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.site-name {
+  float: left;
+}
+
+table {
+  display: table;
+  border: 2px dashed white;
+}
+
+td, th{
+  border: 2px dashed white;
 }
 
 .container-table {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .primary-background {
-    background-color: #FB5607;
-    text-align: center;
+  background-color: #FB5607;
+  text-align: center;
 }
 
 .secondary-background {
-    background-color: #4c4aff;
-    text-align: center;
+  background-color: #4c4aff;
+  text-align: center;
 }
 
 .accent1-background {
-    background-color: #167973;
-    text-align: center;
+  background-color: #167973;
+  text-align: center;
 }
 
 .accent2-background {
-    background-color: #2E6BDF;
-    text-align: center;
+  background-color: #2E6BDF;
+  text-align: center;
 }
 
 .expand-menu li {
-    display: block;
+  display: block;
 }
 
 .expand-menu li:first-child a{
-    color: #111111;
-    text-decoration: none;
+  color: #111111;
+  text-decoration: none;
 }
 
-.social-link img{
-    width: 25px;
-}
 
-.contact-info{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: right;
-}
 
-/* Add a black background color to the top navigation */
-.topnav {
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .img-logo {
 
-    }
-    
-    .topnav {
-        display: block;
-        grid-column: 3/4;
-        text-align: center;
-    }
 
-    .social {
-        display: block;
-        grid-column: 2/4;
-        text-align: center;
-    }
 
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-
-    header{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .img-logo{
-        grid-column: 1/span 3;
-        grid-row: 1/2;
-        width: auto;
-    }
-    .social{
-        grid-column: 3/5;
-        grid-row: 1/2;
-        margin-left: 50px;
-    
-    }
-    .topnav{
-        grid-column: 5/5;
-        grid-row: 1/2;
-    }
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
-    .date{
-        grid-column: 2/5;
-        text-align: center;
-    }
-  }
-
-  /* Small/Phone View ***************/
+/* Small/Phone View ***************/
 nav {
 	margin: 0 auto;
 	max-width: 760px;
-	background-color: tomato;
+	background-color: #FB5607;
 }
 .navigation {
 	list-style: none;
@@ -255,20 +202,20 @@ nav {
 	display: block;
 	padding: 0.75rem;
 	text-align: left;
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+	color: #fff;
 	font-weight: 700;
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a.ham::before {
-	content: "🍔 ";
+	content: "🍔";
 }
 
 .navigation a:hover {
 	color: white;
-	background-color: black;
+	background-color: #4c4aff;
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
