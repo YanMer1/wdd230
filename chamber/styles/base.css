@@ -1,247 +1,539 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  padding: 0;
-  margin: 0;
+body,
+header,
+main,
+footer,
+.visits,
+.hero picture img,
+.discover picture img {
+  width: 100%;
 }
 
-main {
-  background-color: #4C4AFF;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 1rem;
+body,
+header,
+main,
+footer {
+  margin: 0 auto;
+}
+
+.title, .mainTitle h2 {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+body,
+header,
+main,
+footer,
+.joinbox a {
+  font-family: "Trebuchet MS";
+}
+
+header picture img body {
+  vertical-align: middle;
+}
+
+header div,
+footer {
+  background-color: #112e3a;
 }
 
 header,
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header button,
+nav ul li.active a,
+footer,
+footer p a,
+.mainInfo a {
+  color: #fff;
+}
+
+header picture:nth-child(1),
+.title {
+  padding: 7px;
+}
+
+header picture img {
+  width: 100px;
+}
+
+header picture img,
+nav ul li a,
+nav ul.open,
+footer picture img,
+#hamburgerBtn.open span:nth-child(2),
+.hero picture img,
+.discover picture img {
+  display: block;
+}
+
+footer,
+#joinUs,
+#modified,
+.socialMedia,
+.section,
+.now,
+.visits,
+.directorymenu,
+.grid section {
   text-align: center;
-  background: #FB5607;
-  color: white;
 }
 
-
-
-footer {
-  background: #167973;
+header svg {
+  width: 30px;
 }
 
-header h1 {
-  font-family: 'Kodchasan', sans-serif;
-  text-align: center;
-  color: white;
-  margin: 0;
+header picture,
+header button,
+#today,
+.socialMedia,
+.main,
+.climate h1,
+.discover picture img {
+  margin: auto;
 }
 
-nav {
-  background-color: #2E6BDF;
+header button,
+.section p,
+.spots a {
+  padding: 5px 10px;
+}
+
+header button {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0;
-  margin: 0;
-  line-height: 1.6;
 }
 
-nav li {
+nav ul li a,
+section,
+.visits,
+.section,
+.join .section:nth-child(2) div:nth-child(n + 1),
+.directorymenu,
+#joinUs {
+  background-color: #55a5a6;
+  box-shadow: 1px -1px 10px 1px #000;
+}
+
+nav ul li a,
+footer p a,
+.events a,
+.hero a,
+.mainInfo a,
+.joinbox a,
+.spots a,
+.socialMedia a {
+  text-decoration: none;
+}
+
+nav ul li a,
+section a,
+#joinUs,
+.events a,
+.spots a,
+.socialMedia a {
+  color: #000;
+}
+
+nav ul li a {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 12px;
+  justify-content: center;
+}
+
+nav ul li.active a {
+  background-color: #1d6036;
+}
+
+nav ul li a:hover {
+  background-color: #b0d3dc;
+}
+
+nav ul,
+#hamburgerBtn span:nth-child(2),
+#hamburgerBtn.open span:nth-child(1),
+.joinbox,
+.spot3,
+#joinUs {
   display: none;
 }
 
-nav li:first-child {
-  display: block;
+header,
+.hero,
+.events picture {
+  position: relative;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
+footer h2,
+footer p,
+#today,
+.visits,
+.section h2,
+.events h3,
+.events a {
+  padding: 5px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+footer picture img,
+section img,
+.spot1 picture img,
+.spot2 picture img,
+.spot3 picture img {
+  width: 200px;
 }
 
-a {
-  color: white;
+h1,
+#today,
+.thankyou h2 {
+  font-size: 25px;
 }
 
-.hero, .event, .weather, .news, .join, .spotlights {
-  text-align: center;
-  border: white dashed 2px;
-  margin: 1rem 0 0;
-  padding: 1rem;
+header button,
+h2,
+.visits p,
+.joinbox a,
+.hero a,
+.title h1,
+nav ul li a {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+p {
+  font-size: 15px;
+}
+
+iframe {
+  height: 300px;
+  width: 100%;
+}
+/* id selector */
+#today {
+  width: 95%;
+  background-color: #1d6036;
+  
+}
+
+#joinUs,
+.visits {
+  margin-top: 15px;
+}
+
+/* class selector */
+.title {
+  margin: auto 0;
+}
+
+.visits {
+  padding-bottom: 10px;
+}
+
+.hero h2,
+.events picture img,
+.hero a {
+  position: absolute;
+}
+
+.head,
+.climate,
+.join,
+.grid {
+  display: grid;
+}
+
+.head {
+  grid-template-rows: 110px;
+  grid-template-columns: 100px 130px 1fr 1fr;
+}
+
+@media (min-width: 22.625em) {
+  .head {
+    grid-template-columns: 100px 130px 1fr 1fr 1fr;
+  }
+
+  .socialMedia {
+    grid-column: 3/5;
+  }
+
+  .socialMedia span:nth-child(1) {
+    margin-right: 15px;
+  }
+
+  .socialMedia svg:nth-child(1) {
+    padding-bottom: 0;
+  }
+}
+
+.now {
+  height: 50px;
+}
+
+.section {
+  margin: 15px auto 0;
+  width: fit-content;
+}
+
+.events picture {
+  right: 82px;
+  top: 2px;
+}
+
+.hero h2 {
+  left: 12%;
+  top: 10%;
+}
+
+.section h3,
+.climate h2 {
+  border-bottom: 1px solid #000;
+}
+
+.section h3 {
+  font-style: italic;
+}
+
+.climate,
+.spots {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.spots,
+.spot1,
+.discover:nth-last-child(1),
+.thankyou {
+  margin-bottom: 15px;
+}
+
+.spot1,
+.spot2,
+.spot3,
+.thankyou {
   width: 100%;
 }
 
-.date {
-  border: white dashed 2px;
-  margin: 1rem;
-  padding: 0.5rem;
-  width: 95%;
-  background-color: #167973;
+.spot1 {
+  margin-top: 0;
 }
 
-.navigation, .social {
-  float: right;
+.spot2 {
+  margin: 0;
 }
 
-.col-1 img {
-  width: 50px;
-  height: 50px;
+.climate h2,
+.events {
+  grid-column: 1/3;
 }
 
-.spotlight1, .spotlight2 {
-  border: white dashed 2px;
+.climate h2 {
+  text-align: right;
 }
 
-.hero, .event, .weather, .news, .join, .spotlights ul {
-  list-style: none;
-  padding: 0;
+.events,
+.weather,
+.news,
+.spots,
+.spot1,
+.spot2,
+.spot3,
+#joinUs h2,
+.discover picture img,
+.join .section,
+.join .section:nth-child(2) div:nth-child(n + 1),
+.thankyou picture img,
+.hero a,
+.section h3 {
+  padding: 10px;
 }
 
-.amadoracoc-logo {
-  float: left;
+footer,
+.joinbox {
+  padding: 20px 10px 10px 10px;
 }
 
-.social img {
+.joinbox a,
+.hero a {
+  border-radius: 15px;
+  background-color: #0a2032;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.hero a {
+  right: 5%;
+  bottom: 10%;
+}
+
+.main {
+  border-bottom: 1px solid #fff;
+}
+
+.main picture img {
+  margin: 0 auto 15px;
+}
+
+.mainInfo {
+  padding-bottom: 20px;
+}
+
+.mainInfo svg {
   width: 20px;
-  height: 20px;
 }
 
-.amadoracoc-logo img {
-  display: inline;
-  float: left;
-  width: 50px;
-  height: 50px;
+.discover p {
+  padding: 0 10px 10px;
 }
 
-.site-name {
-  float: left;
+.discover picture img[data-src] {
+  filter: blur(0.2em);
 }
 
-table {
-  display: table;
-  border: 2px dashed white;
+.map {
+  margin: 0 15px 15px;
 }
 
-td, th{
-  border: 2px dashed white;
+/* Form */
+form fieldset {
+  border: 1px solid #0a2032;
+  padding: 10px;
+  margin: 15px;
 }
 
-.container-table {
-  margin-top: 1rem;
+form legend,
+form label.top input,
+form label.top select,
+form label.top textarea,
+form label.options {
+  color: #0a2032;
 }
 
-.primary-background {
-  background-color: #FB5607;
-  text-align: center;
+form legend {
+  margin: 0 15px;
+  padding: 0 10px;
 }
 
-.secondary-background {
-  background-color: #4c4aff;
-  text-align: center;
-}
-
-.accent1-background {
-  background-color: #167973;
-  text-align: center;
-}
-
-.accent2-background {
-  background-color: #2E6BDF;
-  text-align: center;
-}
-
-.expand-menu li {
+form label.top,
+form div,
+form label.top input,
+form label.top select,
+form label.top textarea,
+form label.options,
+form input.joinBtn {
   display: block;
 }
 
-.expand-menu li:first-child a{
-  color: #111111;
-  text-decoration: none;
+form label.top,
+form div {
+  padding-top: 10px;
+  color: #8a0000;
+  font-size: 15px;
 }
 
-
-
-
-
-
-
-/* Small/Phone View ***************/
-nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: #FB5607;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-  text-decoration: none;
-	color: #fff;
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+form label.top input,
+form label.top select,
+form label.top textarea,
+form input.joinBtn {
+  width: 100%;
 }
 
-.navigation a.ham::before {
-	content: "🍔";
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  font-size: 20px;
+  border: solid 1px #00a8f3;
+  padding: 12px;
+  background-color: rgba(37, 150, 190, 0.5);
 }
 
-.navigation a:hover {
-	color: white;
-	background-color: #4c4aff;
+form label.options {
+  padding: 12px 0;
 }
 
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-.responsive li {
-	display: block;
+.joininput {
+  display: flex;
 }
 
-.responsive a.ham::before {
-	content: "❌ ";
+form input.joinBtn {
+  font-size: 20px;
+  border: none;
+  background-color: #0a2032;
+  color: white;
+  padding: 12px 24px;
+  margin: 0px 30px 15px 30px;
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+form input[type="radio"] {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2);
+  margin-right: 5px;
+}
+
+.join .section {
+  grid-row: 1;
+}
+
+/* Directory */
+.directorymenu {
+  margin-top: 15px;
+}
+
+.directorymenu,
+section img,
+.socialMedia svg:nth-child(1) {
+  padding: 10px 0;
+}
+
+.directorymenu button,
+section {
+  padding: 15px;
+}
+
+article {
+  margin: 15px 0;
+}
+
+section a,
+.spots h3 {
+  word-wrap: break-word;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.grid section {
+  flex-direction: column;
+}
+
+.grid section > * {
+  margin: 2px;
+}
+
+.list section:nth-child(even) {
+  background-color: rgba(37, 150, 190, 0.5);
+}
+
+section h3 {
+  font-size: 24px;
 }

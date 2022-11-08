@@ -1,27 +1,168 @@
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px
-*/
-
-@media (min-width: 1025px) {
-
+@media (min-width: 64em) {
+    body,
+    header,
+    main,
+    footer {
+      max-width: 1000px;
+    }
+  
+    header button {
+      display: none;
+    }
+  
     nav ul {
-        flex-direction: row;
-        justify-content: center;
+      position: absolute;
+      bottom: 87px;
+      left: 372px;
     }
-    
-    nav li {
-        margin-right: 1rem;
-        display: flex;
+  
+    nav ul li a,
+    .footer p:nth-child(3) {
+      text-align: center;
     }
-    
-    nav li:first-child {
-        display: none;
+  
+    nav ul li a {
+      width: 95px;
     }
-
-    nav li:last-child {
-        margin-right: 0;
+  
+    nav ul,
+    nav ul li a,
+    nav ul.open {
+      display: flex;
     }
-
-}
+  
+    /* id selectors */
+    #modified {
+      text-align: left;
+    }
+  
+    #modified,
+    .events {
+      grid-row: 1;
+    }
+  
+    #modified,
+    .socialMedia {
+      grid-column: 4;
+    }
+  
+    /* class selectors */
+    .home {
+      grid-template-columns: 276px 1fr 276px;
+    }
+  
+    .head {
+      grid-template-columns: 150px 200px 1fr 130px;
+    }
+  
+    .head .active a {
+      background-color: #00a8f3;
+      color: black;
+    }
+  
+    .events,
+    .weather {
+      margin-bottom: 0;
+    }
+  
+    .events,
+    .joinbox,
+    .news,
+    .weather {
+      grid-column: 1;
+    }
+  
+    .events picture {
+      top: 6%;
+    }
+  
+    .hero {
+      grid-row: 1/3;
+    }
+  
+    .hero,
+    .news {
+      grid-column: 2;
+    }
+  
+    .hero h2 {
+      left: 10%;
+    }
+  
+    .hero picture img {
+      height: 100%;
+    }
+  
+    .spots,
+    .joinbox,
+    .news {
+      margin-bottom: 15px;
+    }
+  
+    .spots,
+    .spot1,
+    .spot2,
+    .spot3 {
+      display: block;
+    }
+  
+    .spots {
+      grid-row: 1/4;
+      grid-column: 3;
+    }
+  
+    .spot1,
+    .spot2,
+    .spot3 {
+      min-height: 256px;
+    }
+  
+    .spot2,
+    .spot3 {
+      margin-top: 10px;
+    }
+  
+    .weather {
+      grid-row: 2;
+    }
+  
+    .joinbox,
+    .news {
+      grid-row: 3;
+    }
+  
+    .joinbox a {
+      padding: 10px 35%;
+    }
+  
+    .events h2,
+    .events h3 {
+      padding: 15px 10px;
+    }
+  
+    .main {
+      grid-template-columns: 200px 340px 1fr;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr 130px 131px 1fr;
+    }
+  
+    .footer p:nth-child(3) {
+      border-style: solid;
+      border-width: 0 2px 0 0;
+    }
+  
+    .join {
+      grid-template-columns: 600px 1fr;
+    }
+  
+    .list section a {
+      width: 210px;
+    }
+  
+    .list section p:nth-child(2) {
+      width: 300px;
+    }
+  }
+  

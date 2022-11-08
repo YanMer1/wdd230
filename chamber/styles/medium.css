@@ -1,25 +1,273 @@
-/* 
-  ##Device = Tablets, Ipads 
-  ##Screen = B/w 768px to 1024px
-*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 32.5em) {
+    body,
+    header,
+    main,
+    footer {
+      max-width: 700px;
+    }
   
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
+    body {
+      background-color: #2596be80;
     }
-    
-    nav li {
-        margin-right: 1rem;
+  
+    header picture img {
+      width: 100px;
+    }
+  
+    header picture:nth-child(1) {
+      padding-left: 9px;
+    }
+  
+    header svg {
+      width: 40px;
+    }
+  
+    main,
+    .main,
+    .spots,
+    .footer,
+    .discover picture,
+    .join .section {
+      display: grid;
+    }
+  
+    main,
+    .spots {
+      column-gap: 10px;
+    }
+  
+    footer {
+      padding: 0 10px;
+    }
+  
+    iframe {
+      margin: 24px auto;
+      height: 618px;
+    }
+    /* id selector */
+    #today {
+      width: 97%;
+    }
+  
+    #year {
+      text-align: right;
+    }
+  
+    #modified,
+    .hero,
+    .news,
+    .spots,
+    .joinbox {
+      grid-column: 1/4;
+    }
+  
+    /* class selector */
+    .title h1 {
+      font-size: 25px;
+    }
+  
+    .home {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .head {
+      grid-template-columns: 140px 1fr 50px 50px 100px;
+    }
+  
+    .hero picture img,
+    .joinbox,
+    .join .section {
+      width: 100%;
+    }
+  
+    .hero h2 {
+      left: 25%;
+      top: 5%;
+    }
+  
+    .news {
+      grid-row: 2;
+    }
+  
+    .joinbox {
+      grid-row: 4;
+      display: block;
+    }
+  
+    .joinbox a {
+      padding: 10px 42%;
+    }
+  
+    .joinbox p,
+    .events h2,
+    .events h3 {
+      padding: 25px 10px;
+    }
+  
+    .events,
+    .weather,
+    .membership,
+    .list section {
+      margin-bottom: 15px;
+    }
+  
+    .events,
+    .weather {
+      grid-row: 5;
+    }
+  
+    .events h3 {
+      border-bottom: none;
+    }
+  
+    .events picture {
+      top: 8%;
+    }
+  
+    .spots,
+    .spot2,
+    .hero,
+    .news,
+    .joinbox,
+    .list section:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  
+    .spot1,
+    .spot3,
+    .map {
+      margin: 0;
+    }
+  
+    .spot2,
+    .mainTitle,
+    .join .section {
+      grid-column: 2;
+    }
+  
+    .weather,
+    .info,
+    .location {
+      grid-column: 3;
+    }
+  
+    .main {
+      grid-template-columns: 200px 1fr 160px;
+    }
+  
+    .main picture img {
+      margin: 20px 0;
+    }
+  
+    .mainTitle,
+    .footer p:nth-child(3) {
+      text-align: left;
+    }
+  
+    .mainTitle {
+      padding-left: 7px;
+    }
+  
+    .mainInfo {
+      position: relative;
+      padding-bottom: 0;
+      margin: auto;
+    }
+  
+    .footer {
+      padding: 10px 0 10px;
+    }
+  
+    .join .section:nth-child(2) div:nth-child(n + 2) {
+      margin-top: 10px;
+    }
+  
+    .footer {
+      grid-template-columns: 1fr 130px 1fr;
+    }
+  
+    .footer p:nth-child(5) {
+      grid-column: 1/5;
+    }
+  
+    .mainTitle,
+    .footer p {
+      margin: auto 0;
+    }
+  
+    .footer p:nth-child(2) {
+      border-style: solid;
+      border-width: 0 2px 0 2px;
+    }
+  
+    .discover picture img:hover {
+      box-shadow: inset 0 0 30px #76d6ff;
+    }
+  
+    .join,
+    .directory,
+    .discoverPage,
+    .home,
+    .submittedPage {
+      background-color: #fff;
+    }
+  
+    .join {
+      grid-template-columns: 425px 1fr;
+    }
+  
+    .join .section {
+      grid-template-rows: repeat(4, auto);
+    }
+  
+    .contact {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    form fieldset {
+      margin: 15px auto;
+    }
+  
+    form input.joinBtn {
+      margin: 0px 12px 15px 12px;
+    }
+  
+    section h2,
+    section p,
+    section a {
+      margin: 0 auto;
+    }
+  
+    @media (min-width: 40em) {
+      .list,
+      .list section {
         display: flex;
+      }
+  
+      .list {
+        flex-direction: column;
+      }
+  
+      .list section {
+        justify-content: left;
+        align-items: center;
+      }
+  
+      .list section h2 {
+        width: 200px;
+      }
+  
+      .list section a {
+        width: 150px;
+      }
+  
+      .list section p:nth-child(2) {
+        width: 160px;
+      }
+  
+      .list section p:nth-child(3) {
+        width: 100px;
+      }
     }
-    
-    nav li:first-child {
-        display: none;
-    }
-
-    nav li:last-child {
-        margin-right: 0;
-    }
-
-}
+  }
+  
