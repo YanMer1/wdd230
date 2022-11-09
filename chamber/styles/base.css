@@ -12,6 +12,7 @@ footer,
 .hero picture img,
 .discover picture img {
   width: 100%;
+  overflow-x: hidden;
 }
 
 body,
@@ -451,7 +452,6 @@ form input.joinBtn {
 form label.top input,
 form label.top select,
 form label.top textarea {
-  -webkit-appearance: none;
   font-size: 20px;
   border: solid 1px #00a8f3;
   padding: 12px;
@@ -471,8 +471,8 @@ form input.joinBtn {
   border: none;
   background-color: #0a2032;
   color: white;
-  padding: 12px 24px;
-  margin: 0px 30px 15px 30px;
+  padding: 12px 12px;
+  margin: 0px 5px 5px 5px;
 }
 
 form label.top input:required {

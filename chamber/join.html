@@ -19,7 +19,7 @@
     <header>
       <div class="head">
         <picture>
-          <img src="images/Amadora_COC_logo.webp" alt="Amadora Chamber of Commerce Logo">
+          <img src="images/Amadora_COC_logo.png" alt="Amadora Chamber of Commerce Logo">
         </picture>
         <div class="title">
           <h2>Amadora<br>Chamber of Commerce</h2>
@@ -65,7 +65,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li class="active"><a href="#">Join</a></li>
+          <li class="active"><a href="join.html">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -81,17 +81,17 @@
             <fieldset>
               <legend>Applicant Information</legend>
               <label class="top">
-                First name*<input type="text" name="fname" required />
+                First name*<input type="text" name="fname" required>
               </label>
               <label class="top">
-                Last name*<input type="text" name="lname" required />
+                Last name*<input type="text" name="lname" required>
               </label>
               <label class="top"
                 >Email<input
                   type="email"
                   name="email"
                   placeholder="email@email.com"
-              /></label>
+              ></label>
               <label class="top"
                 >Phone Number*<input
                   type="tel"
@@ -99,34 +99,33 @@
                   placeholder="123-456-789"
                   pattern="[0-9]{9}"
                   required
-              /></label>
+              ></label>
             </fieldset>
             <fieldset>
               <legend>Business Information</legend>
               <label class="top"
                 >Business Name*<input type="text" name="bname" required
-              /></label>
+              ></label>
               <label class="top"
                 >Job Title<input
                   type="text"
                   name="title"
-                  pattern="[a-zA-Z-' ']{7}"
                   placeholder="Marketing Manager"
-              /></label>
+              ></label>
               <div>Membership*</div>
               <label class="options"
-                ><input type="radio" name="membership" value="bronze" required />
+                ><input type="radio" name="membership" value="bronze" required>
                 Bronze</label
               >
               <label class="options"
-                ><input type="radio" name="membership" value="silver" />
+                ><input type="radio" name="membership" value="silver">
                 Silver</label
               >
               <label class="options"
-                ><input type="radio" name="membership" value="gold" /> Gold</label
+                ><input type="radio" name="membership" value="gold"> Gold</label
               >
               <label class="options"
-                ><input type="radio" name="membership" value="np" /> Non
+                ><input type="radio" name="membership" value="np"> Non
                 Profit</label
               >
               <label class="top">
@@ -137,18 +136,18 @@
                 ></textarea>
               </label>
               <label>
-                <input type="hidden" id="fdate" name="fdate" />
+                <input type="hidden" id="fdate" name="fdate">
               </label>
             </fieldset>
             <label class="joininput">
-              <input type="submit" value="Join Amadora Chamber of Commerce" class="joinBtn" />
+              <input type="submit" value="Join Amadora Chamber of Commerce" class="joinBtn">
             </label>
           </form>
         </div>
         <div class="section membership">
           <div>
             <picture>
-              <img src="images/bronze.png" alt="Bronze Badge" />
+              <img src="images/bronze.png" alt="Bronze Badge">
             </picture>
             <h2>BRONZE</h2>
             <p>
@@ -157,7 +156,7 @@
           </div>
           <div>
             <picture>
-              <img src="images/silver.png" alt="Silver Badge" />
+              <img src="images/silver.png" alt="Silver Badge">
             </picture>
             <h2>SILVER</h2>
             <p>
@@ -166,7 +165,7 @@
           </div>
           <div>
             <picture>
-              <img src="images/gold.png" alt="Gold Badge" />
+              <img src="images/gold.png" alt="Gold Badge">
             </picture>
             <h2>GOLD</h2>
             <p>
@@ -175,7 +174,7 @@
           </div>
           <div>
             <picture>
-              <img src="images/np.png" alt="Non profit Badge" />
+              <img src="images/np.png" alt="Non profit Badge">
             </picture>
             <h2>NON PROFIT</h2>
             <p>Benefits include all of the previously stated at no cost.</p>
@@ -237,7 +236,6 @@
     <script src="scripts/main.js" defer></script>
     <script src="scripts/form.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
-    <script src="scripts/weather-api.js" defer></script>
     <script src="scripts/silver-gold-members.js" defer></script>
   </body>
 </html>
