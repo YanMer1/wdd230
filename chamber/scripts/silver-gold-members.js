@@ -1,4 +1,4 @@
-const URL = "https://antonio-saucedo.github.io/wdd230/chamber/json/data.json";
+const URL = "https://yanmer1.github.io/wdd230/chamber/json/data.json";
 
 const display = document.getElementById("spots");
 
