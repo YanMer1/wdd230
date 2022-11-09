@@ -41,3 +41,4 @@ document.getElementById("lastModified").textContent = `Last Updated: ${document.
 if (d.getDay() == 1 || d.getDay() == 2) {
   document.getElementById("joinUs").style.display = "block";
 }
+

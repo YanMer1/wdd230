@@ -62,10 +62,10 @@
       </div>
       <nav>
         <ul id="primaryNav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -75,55 +75,16 @@
         </h2>
       </div>
     </header>
-    <main class="home">
-      <div class="section hero">
-        <h2>Amadora Chamber of Commerce</h2>
-        <picture>
-          <source media="(max-width:520px)" srcset="images/wdd230-orgSmall.jpg">
-          <source media="(max-width:1023px)" srcset="images/wdd230-orgMedium.jpg">
-          <img src="images/wdd230-orgLarge.jpg" alt="wdd230-org">
-        </picture>
-        <a href="#">Join the Chamber</a>
-      </div>
-      <div class="section events">
-        <h2>Ribbon Cutting</h2>
-        <picture> <img src="images/ring.png" alt="Ring Logo"></picture>
-        <h3>The Ring Shack</h3>
-        <p>
-          Join us for the grand opening of The Ring Shack, Thursday at 1:00 p.m.
-        </p>
-        <a href="#">more info ...</a>
-      </div>
-      <div class="section weather">
-        <h2>Weather</h2>
-        <div class="climate">
+    <main class="submittedPage">
+        <div class="section thankyou">
           <picture>
-            <img src="#" alt="" id="weather-icon">
+            <img src="images/check.png" alt="Check Mark" />
           </picture>
-          <h1><span id="temperature"></span>&#176;C</h1>
-          <h2><span id="condition"></span></h2>
+          <h2>Thank you!</h2>
+          <p>
+            We will contact you as soon as possible with a response to your application.
+          </p>
         </div>
-        <div class="climate">
-          <p>Wind Speed:</p>
-          <p><span id="windSpeed"></span> km/h</p>
-          <p>Wind Chill:</p>
-          <p id="windChill">N/A</p>
-        </div>
-      </div>
-      <div class="section news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="section joinbox">
-        <a href="#"> Join Us!</a>
-        <p>
-          Discover how to join Amadora Chamber of Commerce and how it will
-          benefit your organization!
-        </p>
-      </div>
-      <div id="spots" class="section spots"></div>
     </main>
     <footer>
       <div class="main">
@@ -178,6 +139,7 @@
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/lazy-loading.js" defer></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/weather-api.js" defer></script>
     <script src="scripts/silver-gold-members.js" defer></script>

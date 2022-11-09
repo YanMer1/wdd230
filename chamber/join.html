@@ -62,10 +62,10 @@
       </div>
       <nav>
         <ul id="primaryNav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -75,55 +75,112 @@
         </h2>
       </div>
     </header>
-    <main class="home">
-      <div class="section hero">
-        <h2>Amadora Chamber of Commerce</h2>
-        <picture>
-          <source media="(max-width:520px)" srcset="images/wdd230-orgSmall.jpg">
-          <source media="(max-width:1023px)" srcset="images/wdd230-orgMedium.jpg">
-          <img src="images/wdd230-orgLarge.jpg" alt="wdd230-org">
-        </picture>
-        <a href="#">Join the Chamber</a>
-      </div>
-      <div class="section events">
-        <h2>Ribbon Cutting</h2>
-        <picture> <img src="images/ring.png" alt="Ring Logo"></picture>
-        <h3>The Ring Shack</h3>
-        <p>
-          Join us for the grand opening of The Ring Shack, Thursday at 1:00 p.m.
-        </p>
-        <a href="#">more info ...</a>
-      </div>
-      <div class="section weather">
-        <h2>Weather</h2>
-        <div class="climate">
-          <picture>
-            <img src="#" alt="" id="weather-icon">
-          </picture>
-          <h1><span id="temperature"></span>&#176;C</h1>
-          <h2><span id="condition"></span></h2>
+    <main class="join">
+        <div>
+          <form method="get" action="thankyou.html">
+            <fieldset>
+              <legend>Applicant Information</legend>
+              <label class="top">
+                First name*<input type="text" name="fname" required />
+              </label>
+              <label class="top">
+                Last name*<input type="text" name="lname" required />
+              </label>
+              <label class="top"
+                >Email<input
+                  type="email"
+                  name="email"
+                  placeholder="email@email.com"
+              /></label>
+              <label class="top"
+                >Phone Number*<input
+                  type="tel"
+                  name="phone"
+                  placeholder="123-456-789"
+                  pattern="[0-9]{9}"
+                  required
+              /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Business Information</legend>
+              <label class="top"
+                >Business Name*<input type="text" name="bname" required
+              /></label>
+              <label class="top"
+                >Job Title<input
+                  type="text"
+                  name="title"
+                  pattern="[a-zA-Z-' ']{7}"
+                  placeholder="Marketing Manager"
+              /></label>
+              <div>Membership*</div>
+              <label class="options"
+                ><input type="radio" name="membership" value="bronze" required />
+                Bronze</label
+              >
+              <label class="options"
+                ><input type="radio" name="membership" value="silver" />
+                Silver</label
+              >
+              <label class="options"
+                ><input type="radio" name="membership" value="gold" /> Gold</label
+              >
+              <label class="options"
+                ><input type="radio" name="membership" value="np" /> Non
+                Profit</label
+              >
+              <label class="top">
+                Business Description<textarea
+                  name="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+              <label>
+                <input type="hidden" id="fdate" name="fdate" />
+              </label>
+            </fieldset>
+            <label class="joininput">
+              <input type="submit" value="Join Amadora Chamber of Commerce" class="joinBtn" />
+            </label>
+          </form>
         </div>
-        <div class="climate">
-          <p>Wind Speed:</p>
-          <p><span id="windSpeed"></span> km/h</p>
-          <p>Wind Chill:</p>
-          <p id="windChill">N/A</p>
+        <div class="section membership">
+          <div>
+            <picture>
+              <img src="images/bronze.png" alt="Bronze Badge" />
+            </picture>
+            <h2>BRONZE</h2>
+            <p>
+              Benefits include exclusive newsletters, access to the Amadora Chamber of Commerce network, attend virtual events, discount on advertisement postings. Membership Fee: €200.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <img src="images/silver.png" alt="Silver Badge" />
+            </picture>
+            <h2>SILVER</h2>
+            <p>
+              Benefits include all of the previously stated in addition of access to exclusive policy events and conferences. Membership Fee: €500.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <img src="images/gold.png" alt="Gold Badge" />
+            </picture>
+            <h2>GOLD</h2>
+            <p>
+              Benefits include all of the previously stated in addition of access to policy experts, CEO commentary and analysis, and the opportunity to serve on the Amadora Chamber of Commerce policy committee. Membership Fee: €2,000.
+            </p>
+          </div>
+          <div>
+            <picture>
+              <img src="images/np.png" alt="Non profit Badge" />
+            </picture>
+            <h2>NON PROFIT</h2>
+            <p>Benefits include all of the previously stated at no cost.</p>
+          </div>
         </div>
-      </div>
-      <div class="section news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      <div class="section joinbox">
-        <a href="#"> Join Us!</a>
-        <p>
-          Discover how to join Amadora Chamber of Commerce and how it will
-          benefit your organization!
-        </p>
-      </div>
-      <div id="spots" class="section spots"></div>
     </main>
     <footer>
       <div class="main">
@@ -178,6 +235,7 @@
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/lazy-loading.js" defer></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/weather-api.js" defer></script>
     <script src="scripts/silver-gold-members.js" defer></script>
