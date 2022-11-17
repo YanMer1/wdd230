@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How an API works.">
+    <title>Weather API • Demonstration</title>
+    <script src="scripts/weather-api.js" defer></script>
+    <link rel="stylesheet" href="styles/small.css">
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Open Weather Map API Demonstration</h1>
+      </header>
+      <main>
+        <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span>&deg;F</p>
+        <p>The current temperature minimum is <span id="min"></span>&deg;F</p>
+        <p>The current temperature maximum is <span id="max"></span>&deg;F</p>
+        <h2>Current Condition</h2>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+        <h2>Current Wind Speed</h2>
+        <p><span id="wind-desc"></span> MPH</p>
+      </main>
+      <footer>
+        <p>&#169; 2022 | Yannick L. Merino | BYUI-Idaho</p>
+        <p>API &#8594; OpenWeatherMap</p>
+      </footer>
+    </div>
+  </body>
+</html>
