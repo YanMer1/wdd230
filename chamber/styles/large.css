@@ -90,7 +90,11 @@
     }
   
     .hero picture img {
-      height: 100%;
+      max-inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 1/2;
+      object-fit: cover;
+      object-position: top center;
     }
   
     .spots,
