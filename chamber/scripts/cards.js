@@ -8,10 +8,8 @@ function buildBusinessCards(info, type) {
   let data = info.businesses;
   data.forEach((business) => {
     let card = document.createElement("section");
-    let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let p2 = document.createElement("p");
-    let p3 = document.createElement("p");
     let a = document.createElement("a");
 
     card.setAttribute("id", "section");
