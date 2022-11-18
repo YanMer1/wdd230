@@ -1,3 +1,4 @@
+// select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const minTemp = document.querySelector("#min");
 const maxTemp = document.querySelector("#max");
@@ -10,7 +11,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=I
 apiFetch(url);
 
 function displayResults (weatherData) {
-    currentTemp.innerHTML = weatherData.main.temp.toFixed(1);
+    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(1)}</strong>`;
     minTemp.innerHTML = weatherData.main.temp_min.toFixed(1);
     maxTemp.innerHTML = weatherData.main.temp_max.toFixed(1);
     const weatherimagesrc = `https://yanmer1.github.io/wdd230/chamber/images/weatherIcons/${weatherData.weather[0].icon}.png`;
@@ -43,3 +44,5 @@ async function apiFetch(apiURL) {
         console.log(error);
     }
 }
+
+apiFetch();
