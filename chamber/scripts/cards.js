@@ -22,13 +22,17 @@ function buildBusinessCards(info, type) {
     p3.textContent = `Membership Level: ${business.membership}`;
     a.setAttribute("href", `${business.website}`);
 
-
+    if (type == "grid") {
       let img = document.createElement("img");
       img.setAttribute("src", `${business.imageurl}`);
       img.setAttribute("alt", `${business.name}`);
       img.setAttribute("loading", "lazy");
       card.append(img);
-
+    } else {
+      let h2 = document.createElement("h2");
+      h2.innerHTML = `${business.name}`;
+      card.append(h2);
+    }
 
     card.append(h2);
     card.append(p);
