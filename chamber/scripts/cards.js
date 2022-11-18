@@ -34,11 +34,11 @@ function buildBusinessCards(info, type) {
       card.append(h2);
     }
 
-    card.appendChild(h2);
-    card.appendChild(p);
-    card.appendChild(p2);
-    card.appendChild(a);
-    card.appendChild(p3);
+    card.append(h2);
+    card.append(p);
+    card.append(p2);
+    card.append(a);
+    card.append(p3);
 
     display.classList.add(type);
     display.append(card);
