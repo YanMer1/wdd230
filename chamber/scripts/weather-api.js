@@ -3,7 +3,7 @@ const weatherIcon = document.querySelector("#weather-icon");
 const weatherDesc = document.querySelector("#condition");
 const windDesc = document.querySelector("#windSpeed");
 
-const url = `http://api.openweathermap.org/geo/1.0/direct?q=Reboleira&limit=5&appid=11a2e58d6328f2a786e3358f2c695671`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Reboleira&units=Imperial&appid=11a2e58d6328f2a786e3358f2c695671`;
 
 apiFetch(url);
 
