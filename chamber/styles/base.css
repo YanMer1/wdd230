@@ -530,7 +530,7 @@ section a,
 }
 
 .grid section > * {
-  margin: 20px;
+  margin: 2px;
 }
 
 .list section:nth-child(even) {
