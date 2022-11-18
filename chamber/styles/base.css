@@ -496,7 +496,8 @@ form input[type="radio"] {
 
 /* Directory */
 .directorymenu {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 30 px;
 }
 
 .directorymenu,
