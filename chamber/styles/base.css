@@ -496,8 +496,7 @@ form input[type="radio"] {
 
 /* Directory */
 .directorymenu {
-  margin-top: 30px;
-  margin-bottom: 30 px;
+  margin-top: 15px;
 }
 
 .directorymenu,
@@ -531,7 +530,7 @@ section a,
 }
 
 .grid section > * {
-  margin: 2px;
+  margin: 20px;
 }
 
 .list section:nth-child(even) {
