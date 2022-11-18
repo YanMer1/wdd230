@@ -15,7 +15,6 @@ function buildBusinessCards(info, type) {
     let a = document.createElement("a");
 
     card.setAttribute("id", "section");
-    h2.textContent = `${business.name}`;
     p.innerHTML = `${business.address}`;
     p2.innerHTML = `${business.phone}`;
     a.innerHTML = `${business.site}`;
