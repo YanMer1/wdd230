@@ -30,7 +30,6 @@ function buildBusinessCards(info, type) {
       card.append(img);
     } else {
       let h2 = document.createElement("h2");
-      h2.innerHTML = `${business.name}`;
       card.append(h2);
     }
 
