@@ -37,6 +37,8 @@ function buildBusinessCards(info, type) {
     card.append(h2);
     card.append(p);
     card.append(p2);
+    card.append(a);
+    card.append(p3);
 
     display.classList.add(type);
     display.append(card);
