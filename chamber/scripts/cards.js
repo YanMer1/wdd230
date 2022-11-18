@@ -15,6 +15,7 @@ function buildBusinessCards(info, type) {
     let a = document.createElement("a");
 
     card.setAttribute("id", "section");
+    h2.textContent = `${business.name}`;
     p.innerHTML = `${business.address}`;
     p2.innerHTML = `${business.phone}`;
     a.innerHTML = `${business.site}`;
@@ -30,7 +31,6 @@ function buildBusinessCards(info, type) {
     } else {
       let h2 = document.createElement("h2");
       h2.innerHTML = `${business.name}`;
-      card.append(h2);
     }
 
     card.append(h2);
