@@ -28,16 +28,19 @@ function buildBusinessCards(info, type) {
       img.setAttribute("alt", `${business.name}`);
       img.setAttribute("loading", "lazy");
       card.append(img);
+      card.append(h2);
+      card.append(p);
+      card.append(p2);
+      card.append(a);
+      card.append(p3);
     } else {
       let h2 = document.createElement("h2");
       h2.innerHTML = `${business.name}`;
+      card.append(h2);
+      card.append(p);
+      card.append(p2);
+      card.append(a);
     }
-
-    card.append(h2);
-    card.append(p);
-    card.append(p2);
-    card.append(a);
-    card.append(p3);
 
     display.classList.add(type);
     display.append(card);
