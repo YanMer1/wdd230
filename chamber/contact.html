@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/cards.js" defer></script>
   </head>
   <body>
     <header>
       <div class="head">
         <picture>
-          <img src="images/Amadora_COC_logo.webp" alt="Amadora Chamber of Commerce Logo">
+          <img src="images/Amadora_COC_logo.png" alt="Amadora Chamber of Commerce Logo">
         </picture>
         <div class="title">
           <h2>Amadora<br>Chamber of Commerce</h2>
@@ -64,9 +65,9 @@
         <ul id="primaryNav">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="#">Directory</a></li>
-          <li class="active"><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div id="joinUs">
@@ -75,21 +76,57 @@
         </h2>
       </div>
     </header>
-    <main class="submittedPage">
-        <div class="section thankyou">
-          <picture>
-            <img src="images/check.png" alt="Check Mark">
-          </picture>
-          <h2>Thank you!</h2>
-          <p>
-            We will contact you as soon as possible with a response to your application.
-          </p>
+    <main class="join contact">
+        <div>
+          <form method="get" action="submitted.html">
+            <fieldset>
+              <legend>Contact Us</legend>
+              <label class="top">
+                First name*<input type="text" name="fname" required>
+              </label>
+              <label class="top">
+                Last name*<input type="text" name="lname" required>
+              </label>
+              <label class="top"
+                >Email*<input
+                  type="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+              ></label>
+              <label class="top"
+                >Phone Number<input
+                  type="tel"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  pattern="[0-9]{10}"
+              ></label>
+              <label class="top">
+                Questions/Concerns<textarea
+                  name="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+              <label>
+                <input type="hidden" id="fdate" name="fdate">
+              </label>
+            </fieldset>
+            <label class="joininput">
+              <input type="submit" value="Contact Amadora Chamber of Commerce" class="joinBtn">
+            </label>
+          </form>
         </div>
-    </main>
+        <div class="map">
+          <iframe
+            title="Map of Amadora - Lisbon - Portugal"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49778.89538183775!2d-9.266661117576085!3d38.75955328001471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd089ae7d409%3A0xaf7a40877cf7ddbe!2sAmadora!5e0!3m2!1spt-PT!2spt!4v1669057197059!5m2!1spt-PT!2spt" style="border: 1px solid black" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </main>
     <footer>
       <div class="main">
         <picture>
-          <img src="images/Amadora_COC_logo.webp" alt="Amadora Chamber of Commerce Logo">
+          <img src="images/Amadora_COC_logo.png" alt="Amadora Chamber of Commerce Logo">
         </picture>
       <div class="mainTitle">
             <h2>Amadora<br>Chamber of Commerce</h2>
@@ -138,8 +175,8 @@
     </footer>
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/lazy-loading.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/form.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/silver-gold-members.js" defer></script>
   </body>
