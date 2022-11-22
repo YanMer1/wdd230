@@ -390,11 +390,23 @@ footer,
 }
 
 .mainInfo svg {
-  width: 20px;
+  width: 16px;
 }
 
 .discover p {
   padding: 0 10px 10px;
+  font-size: 16px;
+}
+
+.discoverp p {
+  padding: 0 10px 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #55a5a6;
+}
+
+.discoverPage {
+  background-color: #55a5a6;
 }
 
 .discover picture img[data-src] {
@@ -539,4 +551,53 @@ section a,
 
 section h3 {
   font-size: 24px;
+}
+
+
+/* Table */
+
+table {
+  width: 350px;
+  margin: 20px;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+thead,
+tr,
+th,
+td {
+  border: 1.9px solid rgb(190, 184, 184);
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  color: white;
+  background-color: #628ca6;
+  font-weight: bolder;
+}
+
+thead th {
+  background-color: #7fb9c2;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+tr {
+  background-color: #e7f0ed;
+}
+
+b:only-child {
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #e7ffed;
 }

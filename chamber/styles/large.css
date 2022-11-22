@@ -168,5 +168,9 @@
     .list section p:nth-child(2) {
       width: 300px;
     }
+
+    .center {
+      background-color: #55a5a6;
+    }
   }
   
