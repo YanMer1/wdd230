@@ -42,7 +42,7 @@
   }
 
   .temple,
-  .reservations,
+  .fresh,
   .temples-section,
   .weather:last-child,
   .daily,
@@ -63,7 +63,6 @@
     grid-column: 1/4;
   }
 
-  .reservations,
   .temples-section,
   .service-section {
     grid-template-columns: repeat(2, 1fr);
@@ -78,11 +77,11 @@
     grid-column: 1;
   }
 
-  .reservations div.cards:nth-child(2) {
-    grid-column: 2;
+  .fresh div.cards:nth-child(2) {
+    grid-column: 1;
   }
 
-  .reservations div.cards:nth-child(3) {
+  .fresh div.cards:nth-child(3) {
     grid-row: 2;
   }
 

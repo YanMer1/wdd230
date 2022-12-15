@@ -1,6 +1,6 @@
-const URL = "https://antonio-saucedo.github.io/wdd230/final/json/temples.json";
+const URL = "https://yanmer1.github.io//wdd230/final/json/fruits.json";
 
-const display = document.getElementById("temple-cards");
+const display = document.getElementById("fruits-cards");
 
 let count = 1;
 const likeItems = [""];

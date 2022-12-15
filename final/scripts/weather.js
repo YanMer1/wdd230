@@ -1,7 +1,7 @@
 const display = document.querySelector("#weather-info");
 const displayAlert = document.querySelector("#weather-alert");
 
-const url = `https://api.openweathermap.org/data/2.5/onecall?lat=40.0003&lon=-89.2504&exclude=minutely,hourly&appid=fc6f9211ad045deb2b01c57bb94315bc`;
+const url = `https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&exclude=minutely,hourly&appid=11a2e58d6328f2a786e3358f2c695671&units=imperial`;
 
 apiFetch(url);
 
@@ -52,7 +52,7 @@ function createDailyCards(weatherData) {
         }
 
         img.setAttribute("alt", `${descweather}`);
-        p1.innerHTML = `${Math.round((weatherData.daily[i].temp.day.toFixed(0) - 32) * (5 / 9))}°F`;
+        p1.innerHTML = `${Math.round((weatherData.daily[i].temp.day.toFixed(0)))}°F`;
         p2.innerHTML = `${descweather}`;
 
         card.classList.add("daily");
@@ -88,7 +88,7 @@ function currentWeather(weatherData) {
   }
 
   img.setAttribute("alt", `${descweather}`);
-  p1.innerHTML = `${Math.round((weatherData.current.temp.toFixed(0) - 32) * (5 / 9))}°F`;
+  p1.innerHTML = `${Math.round((weatherData.current.temp.toFixed(0)))}°F`;
   p2.innerHTML = `${descweather}`;
   p3.innerHTML = `Humidity: ${weatherData.current.humidity}`;
 
@@ -122,7 +122,7 @@ function currentWeather(weatherData) {
   }
 
   img.setAttribute("alt", `${descweather}`);
-  p1.innerHTML = `${Math.round((weatherData.current.temp.toFixed(0) - 32) * (5 / 9))}°F`;
+  p1.innerHTML = `${Math.round((weatherData.current.temp.toFixed(0)))}°F`;
   p2.innerHTML = `${descweather}`;
   p3.innerHTML = `Humidity: ${weatherData.current.humidity}`;
 

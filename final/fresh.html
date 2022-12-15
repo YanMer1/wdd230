@@ -14,9 +14,9 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/lazy-loading.js" defer></script>
+    <script src="scripts/mixfruits.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -57,42 +57,48 @@
         </div>
       </div>
     </header>
-    <main class="home">
-      <div class="hero-container">
-        <picture class="hero">
-          <img src="images/home-hero-image.png" alt="Lobby">
-        </picture>
-        <a class="all-caps" href="reservation.html">Fruit Drink Mix</a>
-      </div>
-      <div class="cards">
-        <div class="grid">
+    <main class="fresh">
+        <div class="hero-container">
+          <picture class="hero">
+            <img src="images/cocktails.png" alt="Cocktails">
+          </picture>
+        </div>
+        <div class="cards">
+                        <div class="form-container">
+                <h1 class="title-form">Create Drink</h1>
+                <form method="get">
+                    <fieldset>
+                        <legend>Information</legend>
+                        <label class="top">First Name <input type="text" id="fname" name="fname" required></label>
+                        <label class="top">Email <input type="email" id="email" name="email" placeholder="email@email.com" required></label>
+                        <label class="top">Phone <input type="tel" id="phone" name="phone" placeholder="1234567890" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Fruits Options</legend>
+                        <label class="top">First Fruit <select id="firstfruit" name="firstfruit" required>
+                            <option value='' disabled selected>Select a fruit</option>
+                        </select></label>
+                        <label class="top">Second Fruit <select id="secondfruit" name="secondfruit" required>
+                            <option value='' disabled selected>Select a fruit</option>
+                        </select></label>
+                        <label class="top">Third Fruit <select id="thirdfruit" name="thirdfruit" required>
+                            <option value='' disabled selected>Select a fruit</option>
+                        </select></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Instructions</legend>
+                        <label  class="top">Special Instructions <textarea id="instructions" name="instructions"></textarea></label>
+                    </fieldset>
+                    <input type="submit" id="createdrink" value="Create Cocktail" class="button"> 
+                </form>
+            </div>
+            <div>
+                <ul id="list" class="list">
 
+                </ul>
+            </div>  
         </div>
-        <div class="carlsbad boundary">
-          <div class="boundary">
-            <picture>
-              <source
-                media="(max-width: 1000px)"
-                srcset="images/carlsbad_200px.png"
-              >
-              <img src="images/carlsbad_300px.png" alt="Carlsbad">
-            </picture>
-          </div>
-          <div>
-            <h2 class="all-caps">Carlsbad</h2>
-            <p>
-              Carlsbad is a coastal city in the North County region of San Diego County, 
-              California, United States. The city is 87 miles (140 km) south of downtown 
-              Los Angeles and 35 miles (56 km) north of downtown San Diego. As of the 2020 
-              census, the population of the city was 114,746. Carlsbad is a popular tourist 
-              destination and home to many businesses in the golf industry.
-            </p>
-          </div>
-        </div>
-        <div class="weather alert hidden" id="weather-alert"></div>
-        <div class="weather" id="weather-info"></div>
-      </div>
-    </main>
+      </main>
     <footer>
       <div>
         <picture>
@@ -117,7 +123,7 @@
         <p>(555) 123-4567</p>
         <p>
           <a
-            href="https://goo.gl/maps/kLZMxr7sE1VAehaH8" target="_blank"
+          href="https://goo.gl/maps/kLZMxr7sE1VAehaH8" target="_blank"
             ><img src="images/pin.png" alt="Location" />Location</a
           >
         </p>
@@ -129,10 +135,5 @@
         <p id="lastModified"></p>
       </div>
     </footer>
-    <script>
-      function hideAlert() {
-        document.getElementById("weather-alert").classList.add("hidden");
-      }
-    </script>
   </body>
 </html>
