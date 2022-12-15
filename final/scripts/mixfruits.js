@@ -12,7 +12,7 @@ let fruitsData = [];
 fname.focus();
 
 const requestURL =
-  'https://yanmer1.github.io/wdd230/final/json/fruits.json';
+  'https://brotherblazzard.github.io/canvas-content/fruit.json';
 
 async function getData() {
   const request = new Request(requestURL);

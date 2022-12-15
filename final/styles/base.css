@@ -14,6 +14,15 @@ body,
   background-color: #fff;
 }
 
+h1, h2, h3, h4 {
+  font-family: Lora;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+
 header,
 main,
 footer,
@@ -66,11 +75,14 @@ nav ul li a,
 .reserveBtn,
 .service-section form input:nth-child(6),
 footer,
-.footer-nav ul li.active a,
-.footer-nav ul li a:hover,
 .info p a,
 .alert button:hover {
-  color: #fff;
+  color: #EDF5E1;
+}
+
+.footer-nav ul li.active a,
+.footer-nav ul li a:hover {
+  color: #5CDB95;
 }
 
 nav ul li a:hover,
@@ -79,20 +91,19 @@ nav ul li a:hover,
 .footer-nav ul li a,
 footer div:nth-child(3) p,
 footer div:nth-child(3) p a {
-  color: #000;
+  color: #EDF5E1;
 }
 
 nav,
 #hamburgerBtn:hover,
-header,
-.logo,
 .footer-nav ul li:hover,
 .hero-container a:hover,
 .service-section form input:nth-child(6),
 .weather,
 .reserveBtn,
 .alert button:hover {
-  background-color: #2a3249;
+  background-color: #05386B;
+  color: #5CDB95;
 }
 
 nav ul,
@@ -129,64 +140,17 @@ nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
 footer,
-.cards button,
 .alert button {
   border: none;
 }
-
-.fresh .list{
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0;
-  grid-gap: 1rem;
-  justify-items: center;
-}
-
-.fresh .list li{
-  word-wrap: break-word;
-  width: 100%;
-  max-width: 350px;
-  list-style-type: none;
-  background-color: hsla(50, 100%, 52%, 0.7);
-  padding: 1rem;
-  border-radius: 4px;
-  border: 1px solid #333;
-}
-
-.fresh .list li .fruits-list{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.fresh .list li .fruits-list p{
-  padding: 0.5rem;
-  text-align: center;
-  border: 1px solid #333;
-  margin: 0.5rem;
-  border-radius: 4px;
-  background-color: hsla(50, 100%, 52%, 1);
-  font-weight: bold;
-}
-
-.fresh .list li p span{
-  font-weight: bold;
-}
-
-.fresh .list li .fruits-data{
-  padding: 1rem;
-  background-color: #ffd60a;
-  border: 1px solid #333;
-  border-radius: 4px;
-}
-
 
 nav ul li:hover,
 .nav-bar,
 #hamburgerBtn,
 .alert button,
-footer {
-  background-color: #9396a1;
+footer,
+header {
+  background-color: #05386B;
 }
 
 nav ul li a,
@@ -214,7 +178,6 @@ form,
 form input,
 form select,
 form textarea,
-.cards h2,
 .footer-nav,
 .footer-nav h2,
 .daily h2 {
@@ -293,7 +256,6 @@ footer,
 footer div:nth-child(odd),
 .boundary,
 .room picture,
-.cards div,
 .service-section form,
 .service-section p {
   margin: auto;
@@ -301,15 +263,12 @@ footer div:nth-child(odd),
 
 footer div:nth-child(3) p a,
 .hero-container,
-.cards div,
 .alert div {
   position: relative;
 }
 
 footer div:nth-child(3) p img,
 .hero-container a,
-.cards button,
-.cards picture:nth-child(2),
 .alert button {
   position: absolute;
 }
@@ -349,9 +308,10 @@ footer div:nth-child(3) p a {
 }
 
 .active,
+.logo,
 .info,
 .alert div {
-  background-color: #68656e;
+  background-color: #05386B;
 }
 
 .info,
@@ -360,7 +320,7 @@ footer div:nth-child(3) p a {
 }
 
 .boundary {
-  border: 10px solid #2a3249;
+  border: 10px solid #05386B;
   width: fit-content;
 }
 
@@ -399,20 +359,6 @@ footer div:nth-child(3) p a {
   font-size: 14px;
 }
 
-.cards p {
-  word-wrap: break-word;
-}
-
-.cards div {
-  width: 10px;
-}
-
-.cards button,
-.cards picture:nth-child(2) {
-  right: 80px;
-  bottom: 210px;
-  background-color: transparent;
-}
 
 .service-section:nth-child(2) div {
   margin: auto 20px;

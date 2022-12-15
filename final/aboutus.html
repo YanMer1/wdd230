@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/lazy-loading.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
@@ -32,9 +31,9 @@
       <div class="nav-bar">
         <nav>
           <ul id="primary-nav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="fresh.html">Fresh</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
+            <li class="active"><a href="aboutus.html">About Us</a></li>
           </ul>
         </nav>
         <div class="social-media">
@@ -57,42 +56,37 @@
         </div>
       </div>
     </header>
-    <main class="home">
-      <div class="hero-container">
-        <picture class="hero">
-          <img src="images/home-hero-image.png" alt="Lobby">
-        </picture>
-        <a class="all-caps" href="reservation.html">Fruit Drink Mix</a>
-      </div>
-      <div class="cards">
-        <div class="grid">
-
-        </div>
-        <div class="carlsbad boundary">
-          <div class="boundary">
-            <picture>
-              <source
-                media="(max-width: 1000px)"
-                srcset="images/carlsbad_200px.png"
-              >
-              <img src="images/carlsbad_300px.png" alt="Carlsbad">
-            </picture>
-          </div>
-          <div>
-            <h2 class="all-caps">Carlsbad</h2>
-            <p>
-              Carlsbad is a coastal city in the North County region of San Diego County, 
-              California, United States. The city is 87 miles (140 km) south of downtown 
-              Los Angeles and 35 miles (56 km) north of downtown San Diego. As of the 2020 
-              census, the population of the city was 114,746. Carlsbad is a popular tourist 
-              destination and home to many businesses in the golf industry.
-            </p>
-          </div>
-        </div>
-        <div class="weather alert hidden" id="weather-alert"></div>
-        <div class="weather" id="weather-info"></div>
-      </div>
-    </main>
+    <main class="about">
+            <div class="hero-container">
+                <picture class="hero">
+                  <img src="images/drink-hero-image.png" alt="drinks">
+                </picture>
+              </div>
+              <div class="cards">
+                <div class="grid">
+        
+                </div>
+                <div class="about">
+                  <div>
+                    <h2 class="all-caps">Bountiful Foods</h2>
+                    <p>
+                        Today, Bountiful Foods has become one of the leading brands in the natural juice category. 
+                        Our story began in 1958 when two friends and business partners founded Bountiful Foods. 
+                        The entrepreneurial spirit and the passion for healthy living has made us who we are today. 
+                        Our vision is to be the leading brand in the natural juice category by offering consumers 
+                        great tasting and healthy beverages that are produced responsibly and environmentally friendly.
+                    </p>
+                  </div>
+                </div>
+                <br>
+                <div class="map">
+                    <div class="map-content">
+                      <p>We are avaliable from 09:00 Am - 05:00 PM. Your e-mail is bountifulfoods@bf.com, and our contact is (555)-123-4567</p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d835.2789367745589!2d-117.3350943!3d33.1323236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72f580fd93a5%3A0xb85564e15697984c!2s101%20Cannon%20Rd%2C%20Carlsbad%2C%20CA%2092008%2C%20EUA!5e0!3m2!1spt-PT!2spt!4v1671077837302!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+              </div>
+      </main>
     <footer>
       <div>
         <picture>
@@ -105,9 +99,9 @@
       <div class="footer-nav">
         <h2 class="all-caps">Site index</h2>
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="fresh.html">Fresh</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
+          <li  class="active"><a href="aboutus.html">About Us</a></li>
         </ul>
       </div>
       <div>
@@ -117,7 +111,7 @@
         <p>(555) 123-4567</p>
         <p>
           <a
-            href="https://goo.gl/maps/kLZMxr7sE1VAehaH8" target="_blank"
+          href="https://goo.gl/maps/kLZMxr7sE1VAehaH8" target="_blank"
             ><img src="images/pin.png" alt="Location" />Location</a
           >
         </p>
@@ -129,10 +123,5 @@
         <p id="lastModified"></p>
       </div>
     </footer>
-    <script>
-      function hideAlert() {
-        document.getElementById("weather-alert").classList.add("hidden");
-      }
-    </script>
   </body>
 </html>
