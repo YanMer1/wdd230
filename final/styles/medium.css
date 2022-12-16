@@ -43,8 +43,7 @@
 
   .fresh,
   .weather:last-child,
-  .daily,
-  .service-section {
+  .daily {
     display: grid;
   }
 
@@ -57,12 +56,7 @@
     grid-column: 1/4;
   }
 
-  .service-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hero-container,
-  .service-section h2 {
+  .hero-container {
     grid-column: 1/3;
   }
 
@@ -78,15 +72,6 @@
   .weather:last-child div:nth-child(odd),
   .weather:last-child div:nth-child(2) {
     margin-bottom: 0;
-  }
-
-  .service-section:first-child picture,
-  .service-section:nth-child(2) form {
-    grid-row: 2/5;
-  }
-
-  .service-section:nth-child(2) div {
-    grid-row: 3;
   }
 
   .weather:last-child div:first-child {

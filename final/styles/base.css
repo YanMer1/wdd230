@@ -9,8 +9,7 @@ body {
 }
 
 body,
-.cards,
-.service-section {
+.cards {
   background-color: #fff;
 }
 
@@ -51,7 +50,6 @@ form label.top,
 form label.top *,
 form textarea,
 form input.reserveBtn,
-.services .cards div:last-child picture img,
 footer img {
   display: block;
 }
@@ -73,7 +71,6 @@ nav ul li a,
 .hero-container a,
 .weather,
 .reserveBtn,
-.service-section form input:nth-child(6),
 footer,
 .info p a,
 .alert button:hover {
@@ -86,7 +83,6 @@ footer,
 }
 
 nav ul li a:hover,
-.service-section,
 .footer-nav,
 .footer-nav ul li a,
 footer div:nth-child(3) p,
@@ -98,7 +94,6 @@ nav,
 #hamburgerBtn:hover,
 .footer-nav ul li:hover,
 .hero-container a:hover,
-.service-section form input:nth-child(6),
 .weather,
 .reserveBtn,
 .alert button:hover {
@@ -108,8 +103,7 @@ nav,
 
 nav ul,
 .footer-nav ul,
-.room ul li,
-.service-section ul li {
+.room ul li {
   list-style: none;
 }
 
@@ -128,7 +122,6 @@ nav ul li a,
 .hero-container a,
 .room,
 .thanks .cards,
-.service-section h2,
 .weather,
 .weather div,
 .weather div:first-child img,
@@ -184,8 +177,7 @@ form textarea,
   font-size: 20px;
 }
 
-form,
-.service-section form input:nth-child(6) {
+form {
   margin-top: 10px;
 }
 
@@ -221,15 +213,11 @@ form textarea {
 
 form textarea,
 .hero-container,
-.hero img,
-.services .cards div:last-child picture img {
+.hero img {
   width: 100%;
 }
 
-footer p,
-.service-section p,
-.service-section ul li,
-.service-section form * {
+footer p {
   font-size: 16px;
 }
 
@@ -243,8 +231,7 @@ footer,
 .social-media,
 .grid,
 .weather,
-.daily,
-.service-section {
+.daily {
   gap: 10px;
 }
 
@@ -255,9 +242,7 @@ footer,
 
 footer div:nth-child(odd),
 .boundary,
-.room picture,
-.service-section form,
-.service-section p {
+.room picture {
   margin: auto;
 }
 
@@ -330,8 +315,7 @@ footer div:nth-child(3) p a {
 }
 
 .hero-container a,
-.reserveBtn:hover,
-.service-section form input:nth-child(6):hover {
+.reserveBtn:hover {
   background-color: rgba(42, 50, 73, 0.7);
 }
 
@@ -358,19 +342,6 @@ footer div:nth-child(3) p a {
 
 .alert p {
   font-size: 14px;
-}
-
-
-.service-section:nth-child(2) div {
-  margin: auto 20px;
-}
-
-.service-section form {
-  width: 300px;
-}
-
-.service-section p {
-  width: 250px;
 }
 
 .weather:last-child,
