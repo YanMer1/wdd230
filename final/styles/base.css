@@ -322,6 +322,7 @@ footer div:nth-child(3) p a {
 .boundary {
   border: 10px solid #05386B;
   width: fit-content;
+  margin-top: 5px;
 }
 
 .all-caps {
